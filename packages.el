@@ -9,3 +9,23 @@
 ;;
 ;;; License: GPLv3
 
+(defconst journal-packages '(org-journal)
+  )
+
+(defun journal//set-global-keys ()
+  (progn
+    (spacemacs/declare-prefix "aj" "journal")
+    (spacemacs/set-leader-keys
+      "ajc" 'org-journal-new-entry)
+    )
+  )
+
+
+(defun journal/init-org-journal ()
+  (use-package org-journal
+    :init
+    (progn
+      (journal//set-global-keys)
+      )
+    )
+  )
