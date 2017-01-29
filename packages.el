@@ -17,15 +17,24 @@
     (spacemacs/declare-prefix "aj" "journal")
     (spacemacs/set-leader-keys
       "ajc" 'org-journal-new-entry)
+    (spacemacs/set-leader-keys
+      "ajv" 'view-journal)
+    (spacemacs/set-leader-keys
+      "ajs" 'org-journal-search)
+    (spacemacs/set-leader-keys
+      "ajS" 'search-all-journals)
     )
   )
 
 
 (defun journal/init-org-journal ()
   (use-package org-journal
+    :defer t
     :init
     (progn
       (journal//set-global-keys)
       )
+
     )
   )
+
