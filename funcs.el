@@ -1,6 +1,6 @@
-(defun view-journal (&optional time)
-  (interactive "P")
-  (org-journal-new-entry 't time)
+(defun view-journal ()
+  (interactive)
+  (org-journal-new-entry t nil)
   )
 
 (defun search-all-journals ()
