@@ -1,30 +1,48 @@
 #+TITLE: journal layer
 
-# The maximum height of the logo should be 200 pixels.
-[[img/journal.png]]
-
-# TOC links should be GitHub style anchors.
 * Table of Contents                                        :TOC_4_gh:noexport:
  - [[#description][Description]]
  - [[#install][Install]]
  - [[#key-bindings][Key bindings]]
+   - [[#global-bindings][Global Bindings]]
+   - [[#major-mode-bindings][Major Mode Bindings]]
+   - [[#calendar-mode-bindings][Calendar Mode Bindings]]
 
 * Description
-This layer does wonderful things:
-  - thing01
+=spacemacs-journal= is a warpper for [[https://github.com/bastibe/org-journal][org-journal]] providing spacemacs-style keybindings.
+
+=org-journal= provides functions to maintain a simple personal diary / journal using in Emacs.
 
 * Install
-To use this configuration layer, add it to your =~/.spacemacs=. You will need to
-add =journal= to the existing =dotspacemacs-configuration-layers= list in this
-file.
+To use journal layer:
+
+1. =git clone https://github.com/borgnix/spacemacs-journal.git ~/.emacs.d/private=
+2. add it to your =~/.spacemacs=. You will need to add =journal= to the existing =dotspacemacs-configuration-layers= list in this file.
 
 * Key bindings
-
-| Key Binding | Description    |
-|-------------+----------------|
-| ~SPC x x x~ | Does thing01   |
-# Use GitHub URLs if you wish to link a Spacemacs documentation file or its heading.
-# Examples:
-# [[https://github.com/syl20bnr/spacemacs/blob/master/doc/VIMUSERS.org#sessions]]
-# [[https://github.com/syl20bnr/spacemacs/blob/master/layers/%2Bfun/emoji/README.org][Link to Emoji layer README.org]]
-# If space-doc-mode is enabled, Spacemacs will open a local copy of the linked file.
+** Global Bindings
+| Key Binding | Description                                      |
+|-------------+--------------------------------------------------|
+| ~SPC a j j~ | new journal entry                                |
+| ~SPC a j v~ | view journal of today                            |
+| ~SPC a j s~ | search journals within a specified time interval |
+| ~SPC a j S~ | search all journal for a string                 |
+** Major Mode Bindings
+| Key Binding | Description                     |
+|-------------+---------------------------------|
+| ~SPC m j~   | new journal entry               |
+| ~SPC m n~   | next journal file               |
+| ~SPC m p~   | previous journal file           |
+| ~SPC a j s~ | search the current journal file |
+** Calendar Mode Bindings
+| Key Binding | Description                                |
+|-------------+--------------------------------------------|
+| ~J j~       | new journal entry                          |
+| ~J v~       | view an entry in a new buffer              |
+| ~J V~       | view an entry but do not switch to it      |
+| ~J n~       | go to next day with journal entries        |
+| ~J p~       | go to previous day with journal entries    |
+| ~J f~       | search in all entries of all time          |
+| ~J w~       | search in all entries of the current week  |
+| ~J m~       | search in all entries of the current month |
+| ~J y~       | search in all entries of the current year  |
