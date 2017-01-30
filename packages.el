@@ -24,6 +24,16 @@
     "ajS" 'search-all-journals)
   )
 
+(defun journal//set-major-mode-keys ()
+  (spacemacs/set-leader-keys-for-major-mode 'org-journal-mode
+    "n" 'org-journal-open-next-entry)
+  (spacemacs/set-leader-keys-for-major-mode 'org-journal-mode
+    "p"  'org-journal-open-previous-entry)
+  (spacemacs/set-leader-keys-for-major-mode 'org-journal-mode
+    "j"  'org-journal-new-entry)
+  (spacemacs/set-leader-keys-for-major-mode 'org-journal-mode
+    "s"  'org-journal-search)
+  )
 
 (defun journal/init-org-journal ()
   (use-package org-journal
@@ -31,6 +41,7 @@
     :init
     (progn
       (journal//set-global-keys)
+      (journal//set-major-mode-keys)
       )
 
     )
