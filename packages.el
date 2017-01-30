@@ -15,7 +15,7 @@
 (defun journal//set-global-keys ()
   (spacemacs/declare-prefix "aj" "journal")
   (spacemacs/set-leader-keys
-    "ajc" 'org-journal-new-entry)
+    "ajj" 'org-journal-new-entry)
   (spacemacs/set-leader-keys
     "ajv" 'view-journal)
   (spacemacs/set-leader-keys
