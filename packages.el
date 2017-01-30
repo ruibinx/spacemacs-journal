@@ -13,17 +13,15 @@
   )
 
 (defun journal//set-global-keys ()
-  (progn
-    (spacemacs/declare-prefix "aj" "journal")
-    (spacemacs/set-leader-keys
-      "ajc" 'org-journal-new-entry)
-    (spacemacs/set-leader-keys
-      "ajv" 'view-journal)
-    (spacemacs/set-leader-keys
-      "ajs" 'org-journal-search)
-    (spacemacs/set-leader-keys
-      "ajS" 'search-all-journals)
-    )
+  (spacemacs/declare-prefix "aj" "journal")
+  (spacemacs/set-leader-keys
+    "ajc" 'org-journal-new-entry)
+  (spacemacs/set-leader-keys
+    "ajv" 'view-journal)
+  (spacemacs/set-leader-keys
+    "ajs" 'org-journal-search)
+  (spacemacs/set-leader-keys
+    "ajS" 'search-all-journals)
   )
 
 
