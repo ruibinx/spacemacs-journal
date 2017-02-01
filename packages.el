@@ -67,8 +67,6 @@
     :config
     (progn
       (journal//set-calendar-keys)
-      (add-hook 'calendar-today-visible-hook 'org-journal-mark-entries)
-      (add-hook 'calendar-today-invisible-hook 'org-journal-mark-entries)
       )
     )
   )
