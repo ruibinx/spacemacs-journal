@@ -16,7 +16,7 @@
 * Install
 To use journal layer:
 
-1. =git clone https://github.com/borgnix/spacemacs-journal.git ~/.emacs.d/private=
+1. =git clone https://github.com/borgnix/spacemacs-journal.git ~/.emacs.d/private/journal=
 2. add it to your =~/.spacemacs=. You will need to add =journal= to the existing =dotspacemacs-configuration-layers= list in this file.
 
 * Key bindings
