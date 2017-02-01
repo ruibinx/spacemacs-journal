@@ -57,6 +57,8 @@
     :init
     (progn
       (journal//set-global-keys)
+      (setq spacemacs-org-journal-mode-map (copy-keymap spacemacs-org-mode-map))
+      (spacemacs//init-leader-mode-map 'org-journal-mode 'spacemacs-org-journal-mode-map)
       (journal//set-major-mode-keys)
       )
     )
