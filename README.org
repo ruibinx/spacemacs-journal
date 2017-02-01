@@ -30,10 +30,10 @@ To use journal layer:
 ** Major Mode Bindings
 | Key Binding | Description                     |
 |-------------+---------------------------------|
-| ~SPC m j~   | new journal entry               |
-| ~SPC m n~   | next journal file               |
-| ~SPC m p~   | previous journal file           |
-| ~SPC m s~ | search the current journal file |
+| ~SPC m j j~ | new journal entry               |
+| ~SPC m j n~  | next journal file               |
+| ~SPC m j p~  | previous journal file           |
+| ~SPC m j s~ | search the current journal file |
 ** Calendar Mode Bindings
 | Key Binding | Description                                |
 |-------------+--------------------------------------------|
@@ -42,7 +42,7 @@ To use journal layer:
 | ~J V~       | view an entry but do not switch to it      |
 | ~J n~       | go to next day with journal entries        |
 | ~J p~       | go to previous day with journal entries    |
-| ~J f~       | search in all entries of all time          |
+| ~J S~       | search in all entries of all time          |
 | ~J w~       | search in all entries of the current week  |
 | ~J m~       | search in all entries of the current month |
 | ~J y~       | search in all entries of the current year  |
