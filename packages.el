@@ -48,7 +48,7 @@
   (define-key calendar-mode-map "JS" 'org-journal-search-forever)
   (define-key calendar-mode-map "Jw" 'org-journal-search-calendar-week)
   (define-key calendar-mode-map "Jm" 'org-journal-search-calendar-month)
-  (define-key calendar-mode-map "Jy" 'org-journal-search-calendar-month)
+  (define-key calendar-mode-map "Jy" 'org-journal-search-calendar-year)
   )
 
 (defun journal/init-org-journal ()
