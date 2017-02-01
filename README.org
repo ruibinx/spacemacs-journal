@@ -33,7 +33,7 @@ To use journal layer:
 | ~SPC m j~   | new journal entry               |
 | ~SPC m n~   | next journal file               |
 | ~SPC m p~   | previous journal file           |
-| ~SPC a j s~ | search the current journal file |
+| ~SPC m s~ | search the current journal file |
 ** Calendar Mode Bindings
 | Key Binding | Description                                |
 |-------------+--------------------------------------------|
