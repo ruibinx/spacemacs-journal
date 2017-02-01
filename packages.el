@@ -30,13 +30,13 @@
 
 (defun journal//set-major-mode-keys ()
   (spacemacs/set-leader-keys-for-major-mode 'org-journal-mode
-    "n" 'org-journal-open-next-entry)
+    "jn" 'org-journal-open-next-entry)
   (spacemacs/set-leader-keys-for-major-mode 'org-journal-mode
-    "p"  'org-journal-open-previous-entry)
+    "jp"  'org-journal-open-previous-entry)
   (spacemacs/set-leader-keys-for-major-mode 'org-journal-mode
-    "j"  'org-journal-new-entry)
+    "jj"  'org-journal-new-entry)
   (spacemacs/set-leader-keys-for-major-mode 'org-journal-mode
-    "s"  'org-journal-search)
+    "js"  'org-journal-search)
   )
 
 (defun journal//set-calendar-keys ()
@@ -45,7 +45,7 @@
   (define-key calendar-mode-map "JV" 'org-journal-display-entry)
   (define-key calendar-mode-map "Jn" 'org-journal-next-entry)
   (define-key calendar-mode-map "Jp" 'org-journal-previous-entry)
-  (define-key calendar-mode-map "Jf" 'org-journal-search-forever)
+  (define-key calendar-mode-map "JS" 'org-journal-search-forever)
   (define-key calendar-mode-map "Jw" 'org-journal-search-calendar-week)
   (define-key calendar-mode-map "Jm" 'org-journal-search-calendar-month)
   (define-key calendar-mode-map "Jy" 'org-journal-search-calendar-month)
