@@ -9,7 +9,7 @@
    - [[#calendar-mode-bindings][Calendar Mode Bindings]]
 
 * Description
-=spacemacs-journal= is a warpper for [[https://github.com/bastibe/org-journal][org-journal]] providing spacemacs-style keybindings.
+=spacemacs-journal= is a wrapper for [[https://github.com/bastibe/org-journal][org-journal]] providing spacemacs-style keybindings.
 
 =org-journal= provides functions to maintain a simple personal diary / journal using in Emacs.
 
